@@ -1,0 +1,25 @@
+/* projeto */
+.projeto .container {
+  padding: 4rem 0;
+}
+
+.projeto h2 {
+  color: var(--cor-padrão);
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.projeto p {
+  max-width: 60rem;
+  margin: 0 auto 4rem auto;
+  text-align: center;
+}
+
+.projeto .projeto-strong {
+  color: var(--cor-extra-1);
+}
+
+.projeto .div-projetos-btn{
+  text-align: center;
+  margin: 4rem auto 2rem auto;
+}

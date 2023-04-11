@@ -1,0 +1,261 @@
+@import 'projetos.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+ul {
+  margin: 0px;
+  padding: 0px;
+  color: var(--colors-background);
+  background-color: var(--cor-white);
+}
+
+div header a {
+  text-decoration: none;
+}
+
+header a.logo {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2e2727;
+  padding: 1rem;
+  color: var(--cor-padrão);
+}
+
+#header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  padding: 4rem 1rem;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu li {
+  padding: 0.4rem 1rem;
+}
+
+#menu li.active {
+  background: linear-gradient(113.28deg, #E891FF -0.53%, rgba(134, 172, 250, 0.47) 101.56%);
+  border-radius: 0.4rem;
+  color: var(--cor-white);
+}
+
+
+
+#menu a {
+  font-size: 1.6rem;
+  display: block;
+  padding: 0.5rem;
+  color: var( --cor-padrão);
+  font-weight: 300;
+  text-decoration: none !important;
+}
+
+.menu-selected {
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--colors-background);
+}
+
+#btn-mobile {
+  display: block;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0 6rem 0;
+  gap: 2rem;
+}
+
+main section {
+  padding: 8rem 0;
+  background-color: var(--colors-principal);
+}
+
+main h3{
+  font-size: 2.2rem !important;
+  font-weight: 300;
+}
+
+main section .titulo {
+  text-align: center !important;
+}
+
+main section strong {
+  color: var(--cor-extra-1);
+  background-color: var(--cor-extra-1);;
+}
+main section p {
+  text-align: center;
+  line-height: 2.2rem;
+  margin: 2rem 0 4rem 0;
+  max-width: 72rem;
+}
+
+main section img {
+  max-width: 360px;
+  width: 100%;
+  flex: 1;
+  margin-left: 3rem;
+}
+
+main section a {
+  margin-right: 1rem;
+}
+
+@media (max-width: 360px) {
+  main section .btn-principal {
+    display: inline-block;
+  }
+}
+
+/* Sobre */
+.sobre {
+  padding: 4rem 1rem;
+  background-color: var(--colors-background-2);
+}
+
+.sobre section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.sobre h2{
+  padding: 2rem 0;
+}
+
+.sub-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.sub-container div{
+ flex: 1;
+}
+
+.sobre strong {
+  font-size: 1.6rem;
+  color: var(--cor-extra-1);
+}
+
+.sub-container div .img {
+  border-radius: 0.4rem;
+  border: 2px solid var(--cor-extra-1);
+  margin-left: 6rem;
+}
+.icon-centro{
+  margin: 4rem auto;
+}
+
+@keyframes pisca {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* serviços */
+.background-servicos{
+  background-color: var(--colors-background-2);
+  padding: 6rem 0;
+}
+.background-servicos h2{
+  text-align: center;
+  margin: 4rem 0;
+}
+.background-servicos h2::after {
+  content: " ";
+  height: 4px;
+  width: 40px;
+  background-color: var(--cor-extra-1);
+  display: block;
+  margin: 1.4rem  AUTO;
+}
+
+.servicos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.servicos-div{
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.servicos-article{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+}
+
+.servicos-article-img img{
+  max-width: 160px;
+  max-height: 160px;
+  background-color: var(--colors-background-1);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 0.6rem;
+  flex: 1;
+  
+}
+
+.servicos-article-texto{
+  
+  margin: 1rem;
+  flex:1;
+}
+
+.servicos-article-texto h3{
+  font-weight: 300;
+  font-size: 2.2rem;
+  
+}
+
+.servicos-article-texto h3::after {
+  content: " ";
+  height: 4px;
+  width: 30px;
+  background-color: var(--cor-extra-1);
+  display: block;
+  margin: 1rem  0;
+}
+
+.servicos-article-texto p{
+  max-width: 400px;
+}
+
+.background-servicos .div-projetos-btn{
+  text-align: center !important;
+  margin: 2rem 0;
+}
