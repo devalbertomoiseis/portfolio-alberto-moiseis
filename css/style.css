@@ -183,11 +183,11 @@ main section a {
 /* serviços */
 .background-servicos{
   background-color: var(--colors-background-2);
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .background-servicos h2{
   text-align: center;
-  margin: 4rem 0;
+  margin: 2rem 0 4rem 0;
 }
 .background-servicos h2::after {
   content: " ";
