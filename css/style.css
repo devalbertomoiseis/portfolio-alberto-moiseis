@@ -183,7 +183,7 @@ main section a {
 /* serviços */
 .background-servicos{
   background-color: var(--colors-background-2);
-  padding: 4rem 0;
+  padding: 4rem 0 0 0;
 }
 .background-servicos h2{
   text-align: center;
@@ -231,7 +231,6 @@ main section a {
 }
 
 .servicos-article-texto{
-  
   margin: 1rem;
   flex:1;
 }
@@ -255,7 +254,52 @@ main section a {
   max-width: 400px;
 }
 
-.background-servicos .div-projetos-btn{
-  text-align: center !important;
-  margin: 2rem 0;
+/* Processo */
+.processo h3 {
+  text-align: center;
+  margin: -2rem 0 4rem 0;
+}
+
+.processo-div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.processo-article{
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  max-width: 28%;
+  border-radius: 0.6rem;
+  border: 1px solid #E891FF;
+  background-color: var(--colors-background-1);
+}
+
+.processo-article:hover{
+  transition: 0.6s;
+  background-color: var(--colors-background-2);
+}
+
+.processo-article h4{
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0rem 0.2rem 0rem 0;
+  padding: 1rem;
+  color: var(--cor-white);
+}
+
+.processo-article h4::after {
+  content: " ";
+  height: 4px;
+  width: 40px;
+  background-color: var(--cor-extra-1);
+  display: block;
+  margin: 12px auto;
+}
+
+.processo-article p{
+  padding: 0 1rem 1rem 1rem;
 }
