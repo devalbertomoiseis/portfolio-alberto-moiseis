@@ -1,5 +1,6 @@
 @import 'projetos.css';
 @import 'cursos.css';
+
 html {
   scroll-behavior: smooth;
 }
@@ -49,7 +50,7 @@ header a.logo {
 #menu li.active {
   background: linear-gradient(113.28deg, #E891FF -0.53%, rgba(134, 172, 250, 0.47) 101.56%);
   border-radius: 0.4rem;
-  color: var( --cor-padrão);
+  color: var(--cor-padrão);
 }
 
 
@@ -58,9 +59,15 @@ header a.logo {
   font-size: 1.6rem;
   display: block;
   padding: 0.5rem;
-  color: var( --cor-padrão);
+  color: var(--cor-padrão);
   font-weight: 300;
   text-decoration: none !important;
+}
+
+#menu li:hover {
+  background-color: #e6a5f8a8;
+  border-radius: 0.4rem;
+  transition: 0.6s;
 }
 
 .menu-selected {
@@ -89,7 +96,7 @@ main section {
   background-color: var(--colors-principal);
 }
 
-main h3{
+main h3 {
   font-size: 2.2rem !important;
   font-weight: 300;
 }
@@ -100,8 +107,10 @@ main section .titulo {
 
 main section strong {
   color: var(--cor-extra-1);
-  background-color: var(--cor-extra-1);;
+  background-color: var(--cor-extra-1);
+  ;
 }
+
 main section p {
   text-align: center;
   line-height: 2.2rem;
@@ -120,6 +129,12 @@ main section a {
   margin-right: 1rem;
 }
 
+main section a:hover {
+  background-color: #ebb7faa8;
+  border-radius: 0.4rem;
+  transition: 0.6s;
+}
+
 @media (max-width: 360px) {
   main section .btn-principal {
     display: inline-block;
@@ -136,21 +151,21 @@ main section a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+
 }
 
-.sobre h2{
+.sobre h2 {
   padding: 2rem 0;
 }
 
-.sub-container{
+.sub-container {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
 }
 
-.sub-container div{
- flex: 1;
+.sub-container div {
+  flex: 1;
 }
 
 .sobre strong {
@@ -163,13 +178,22 @@ main section a {
   border: 2px solid var(--cor-extra-1);
   margin-left: 6rem;
 }
-.icon-centro{
+
+.icon-centro {
   margin: 2rem auto 0rem auto;
- 
+
 }
-.icon-centro img{
+
+.icon-centro img {
   max-height: 3.4rem;
 }
+
+.sobre a:hover {
+  background-color: #ebb7faa8;
+  border-radius: 0.4rem;
+  transition: 0.6s;
+}
+
 @keyframes pisca {
 
   0%,
@@ -183,36 +207,38 @@ main section a {
 }
 
 /* serviços */
-.background-servicos{
+.background-servicos {
   background-color: var(--colors-background-2);
   padding: 4rem 0 0 0;
 }
-.background-servicos h2{
+
+.background-servicos h2 {
   text-align: center;
   margin: 2rem 0 4rem 0;
 }
+
 .background-servicos h2::after {
   content: " ";
   height: 4px;
   width: 40px;
   background-color: var(--cor-extra-1);
   display: block;
-  margin: 1.4rem  AUTO;
+  margin: 1.4rem AUTO;
 }
 
-.servicos{
+.servicos {
   display: flex;
   justify-content: space-between;
 }
 
-.servicos-div{
+.servicos-div {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 1rem;
   margin: 0 0 1rem 0;
 }
 
-.servicos-article{
+.servicos-article {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -221,7 +247,7 @@ main section a {
   margin: 0 0 2rem 0;
 }
 
-.servicos-article-img img{
+.servicos-article-img img {
   max-width: 160px;
   max-height: 160px;
   background-color: var(--colors-background-1);
@@ -229,18 +255,18 @@ main section a {
   margin: 1rem;
   border-radius: 0.6rem;
   flex: 1;
-  
+
 }
 
-.servicos-article-texto{
+.servicos-article-texto {
   margin: 1rem;
-  flex:1;
+  flex: 1;
 }
 
-.servicos-article-texto h3{
+.servicos-article-texto h3 {
   font-weight: 300;
   font-size: 2.2rem;
-  
+
 }
 
 .servicos-article-texto h3::after {
@@ -249,30 +275,33 @@ main section a {
   width: 30px;
   background-color: var(--cor-extra-1);
   display: block;
-  margin: 1rem  0;
+  margin: 1rem 0;
 }
 
-.servicos-article-texto p{
+.servicos-article-texto p {
   max-width: 400px;
 }
 
+
+
 /* Processo */
-.processo{
+.processo {
   padding: 2rem 0 6rem 0;
 }
+
 .processo h3 {
   text-align: center;
   margin: -2rem 0 4rem 0;
 }
 
-.processo-div{
+.processo-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
 }
 
-.processo-article{
+.processo-article {
   padding: 1rem;
   margin: 1rem;
   text-align: center;
@@ -282,12 +311,12 @@ main section a {
   background-color: var(--colors-background-1);
 }
 
-.processo-article:hover{
+.processo-article:hover {
   transition: 0.6s;
   background-color: var(--colors-background-2);
 }
 
-.processo-article h4{
+.processo-article h4 {
   display: block;
   font-size: 2rem;
   font-weight: 400;
@@ -305,30 +334,33 @@ main section a {
   margin: 12px auto;
 }
 
-.processo-article p{
+.processo-article p {
   padding: 0 1rem 1rem 1rem;
 }
 
-footer{
+
+footer {
   padding: 4rem 0 2rem 0;
   text-align: center;
 }
 
-footer p{
+footer p {
   text-align: center;
   max-width: 600px;
   padding: 2rem;
   margin: 0 auto;
 }
 
-footer .social{
+footer .social {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.social a{
+
+.social a {
   padding: 1rem;
 }
+
 .social i {
   background: linear-gradient(113.28deg, #E891FF -0.53%, rgba(134, 172, 250, 0.47) 101.56%);
   border-radius: 0.4rem;
@@ -336,18 +368,18 @@ footer .social{
   padding: 0.6rem 1rem;
   margin: 1.5rem 0;
 }
-footer  strong{
+
+footer strong {
   color: #E891FF !important;
   font-size: 1.6rem;
   font-weight: bold;
 }
 
-footer .copy{
+footer .copy {
   margin-top: 1rem;
 }
 
-footer .copy-a a{
-  text-decoration: none !important; 
+footer .copy-a a {
+  text-decoration: none !important;
   color: #E891FF !important;
 }
-
