@@ -192,9 +192,11 @@
     border-bottom: 1px solid var(--cor-extra-1);
   }
 
-  #menu a:hover {
+  #menu li:hover {
     background-color: var(--cor-extra-1);
-    transition: color 0.3s, 0.3s;
+    border-radius: 0.4rem;
+    transition: 0.6s;
+    margin-top: -6px;
   }
 
   #btn-mobile {
