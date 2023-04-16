@@ -9,10 +9,20 @@
   text-align: center;
 }
 
+
 .projeto p {
   max-width: 60rem;
   margin: 0 auto 4rem auto;
   text-align: center;
+ 
+}
+
+.projeto-p{
+  padding: 0 1.4rem;
+}
+
+.projeto-p{
+  padding: 0 1.4rem;
 }
 
 .projeto .projeto-strong {
