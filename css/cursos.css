@@ -1,0 +1,55 @@
+@import "variables.css";
+.cursos {
+  margin: 6rem auto;
+  text-align: center;
+}
+
+.cursos-section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 2rem;
+
+}
+
+.cursos-article{
+  margin: 2rem;
+  max-width: 44%;
+  padding: 4rem;
+  background: var(--colors-background-2);
+  border-radius: 0.4rem;
+}
+
+@media (max-width: 780px){
+  
+.cursos-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 2rem;
+
+}
+  .cursos-article{
+    max-width: 92%;
+  }
+}
+.cursos-article h4{
+  font-size: 2rem;
+}
+.cursos-article p{
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+
+.cursos-article a.link {
+  text-decoration: none !important;
+  background: linear-gradient(113.28deg, #E891FF -0.53%, rgba(134, 172, 250, 0.47) 101.56%);
+  border-radius: 0.4rem;
+  color: var(--cor-padrão);
+  padding: 1rem;
+}

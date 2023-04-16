@@ -1,5 +1,5 @@
 @import 'projetos.css';
-
+@import 'cursos.css';
 html {
   scroll-behavior: smooth;
 }
@@ -49,7 +49,7 @@ header a.logo {
 #menu li.active {
   background: linear-gradient(113.28deg, #E891FF -0.53%, rgba(134, 172, 250, 0.47) 101.56%);
   border-radius: 0.4rem;
-  color: var(--cor-white);
+  color: var( --cor-padrão);
 }
 
 
@@ -66,7 +66,6 @@ header a.logo {
 .menu-selected {
   padding: 10px;
   border-radius: 5px;
-  color: var(--colors-background);
 }
 
 #btn-mobile {
@@ -165,9 +164,12 @@ main section a {
   margin-left: 6rem;
 }
 .icon-centro{
-  margin: 4rem auto;
+  margin: 2rem auto 0rem auto;
+ 
 }
-
+.icon-centro img{
+  max-height: 3.4rem;
+}
 @keyframes pisca {
 
   0%,
@@ -255,6 +257,9 @@ main section a {
 }
 
 /* Processo */
+.processo{
+  padding: 2rem 0 6rem 0;
+}
 .processo h3 {
   text-align: center;
   margin: -2rem 0 4rem 0;
@@ -303,3 +308,46 @@ main section a {
 .processo-article p{
   padding: 0 1rem 1rem 1rem;
 }
+
+footer{
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+}
+
+footer p{
+  text-align: center;
+  max-width: 600px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+footer .social{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social a{
+  padding: 1rem;
+}
+.social i {
+  background: linear-gradient(113.28deg, #E891FF -0.53%, rgba(134, 172, 250, 0.47) 101.56%);
+  border-radius: 0.4rem;
+  color: var(--colors-background-2);
+  padding: 0.6rem 1rem;
+  margin: 1.5rem 0;
+}
+footer  strong{
+  color: #E891FF !important;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+footer .copy{
+  margin-top: 1rem;
+}
+
+footer .copy-a a{
+  text-decoration: none !important; 
+  color: #E891FF !important;
+}
+
