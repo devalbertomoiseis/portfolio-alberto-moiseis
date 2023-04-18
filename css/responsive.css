@@ -239,7 +239,9 @@
     transform: rotate(-135deg);
     top: -7px;
   }
-
+  .sobre{
+    padding:  0rem 0 3rem 0;
+  }
   .sobre .social ul {
     gap: 1rem;
     margin: 2rem 0 2rem 0;
