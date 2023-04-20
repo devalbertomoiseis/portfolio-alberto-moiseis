@@ -33,6 +33,12 @@ p {
   padding: 0 2rem;
 }
 
+.container-extra{
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
 .titulo {
   font-size: 4.4rem;
