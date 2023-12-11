@@ -1,4 +1,5 @@
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+}
 
 @media (max-width: 900px) {
   main {
@@ -29,19 +30,18 @@
   /**/
 
   .sobre {
-    padding: 2rem 0 0 0;
-
+    padding: 4rem 0 6rem 0;
   }
 
   .sobre section {
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    padding: 0;
   }
 
   .sobre p {
     max-width: 90%;
+    width: 650px;
     text-align: center;
     margin: 0 auto;
   }
@@ -54,15 +54,6 @@
     display: none;
   }
 
-  .nav-tabs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    gap: 2rem;
-    padding: 0.6rem;
-  }
-
   .sub-titulo {
     text-align: center;
   }
@@ -70,16 +61,17 @@
   .sub-titulo::after {
     margin: 12px auto;
   }
-
 }
 
-@media(max-width: 860px) {
-
+@media (max-width: 860px) {
   /* serviços */
   .background-servicos {
     padding: 4rem 0;
   }
-
+  .sub-container p {
+    width: 88%;
+    margin: 0 auto;
+  }
   .servicos {
     flex-direction: column;
     flex-wrap: wrap;
@@ -121,42 +113,52 @@
   .servicos-article-texto p {
     max-width: 450px;
   }
+  /*Projetos*/
+
+  .projeto-divs-1 {
+    width: 44%;
+    margin: 1rem;
+    border: 1px solid #e891ff;
+    padding: 2rem;
+    text-align: center;
+    background: var(--colors-background-2);
+  }
 
   /*Processo*/
-  .processo-article{
+  .processo-article {
     max-width: 46%;
   }
 }
 
 @media (max-width: 780px) {
-
-  .nav-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0.6rem;
+  .sobre .sub-container div .img {
+    display: none;
   }
 
-  .tab-content {
-    border: 2px solid var(--cor-padrão);
-    border-radius: 5px;
-    max-width: 94%;
-    margin: 0 auto;
-    padding: 2rem;
+  .projeto-divs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .projeto-divs-1 {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .processo-article {
+    max-width: 50%;
   }
   /*Processo*/
-  .processo-div{
+  .processo-div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  .processo-article{
+  .processo-article {
     max-width: 80%;
   }
-  
-
 }
 
 @media (max-width: 600px) {
@@ -239,14 +241,13 @@
     transform: rotate(-135deg);
     top: -7px;
   }
-  .sobre{
-    padding:  0rem 0 3rem 0;
+  .sobre {
+    padding: 0rem 0 3rem 0;
   }
   .sobre .social ul {
     gap: 1rem;
     margin: 2rem 0 2rem 0;
   }
-
 
   /* serviços */
   .background-servicos {
@@ -295,9 +296,8 @@
   }
 
   .servicos-article-texto p {
-    max-width:auto;
+    max-width: auto;
   }
-
 }
 
 @media (max-width: 520px) {
@@ -310,4 +310,3 @@
     text-align: center !important;
   }
 }
-

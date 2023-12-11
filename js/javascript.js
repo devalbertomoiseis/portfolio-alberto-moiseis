@@ -13,25 +13,7 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 // Aula 17 - Navegação por tabs
 
 //------------------------------------------------------------------------------
-const navTabs = document.querySelectorAll(".js-nav-tabs li a");
-const tabPane = document.querySelectorAll(".js-tab-pane");
 
-navTabs.forEach((nav, index) => {
-  nav.addEventListener("click", (event) => {
-    event.preventDefault();
-
-    navTabs.forEach((item) => {
-      item.classList.remove("active");
-    });
-
-    tabPane.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-
-    nav.classList.add("active");
-    tabPane[index].classList.add("active");
-  });
-});
 
 function typewriterEffect(element, delay = 2) {
   let split_element = element.innerHTML.split("");
@@ -51,7 +33,11 @@ typewriterEffect(document.querySelector("h1"), 900);
 // nessa linha chamamos o id que foi definido na tag <strong> no doc html
 const textDisplay = document.getElementById("efeito");
 // nessa linha são definidas as tres frases que serão animadas
-const phrases = ["Desenvolvedor WEB", "Desenvolvedor Front-End", "Desenvolvedor Front-End & Freelancer"];
+const phrases = [
+  "Desenvolvedor WEB",
+  "Desenvolvedor Front-End",
+  "Desenvolvedor Front-End & Freelancer",
+];
 let i = 0;
 let j = 0;
 let currentPhrase = [];

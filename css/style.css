@@ -1,5 +1,5 @@
-@import 'projetos.css';
-@import 'cursos.css';
+@import "projetos.css";
+@import "cursos.css";
 
 html {
   scroll-behavior: smooth;
@@ -48,12 +48,14 @@ header a.logo {
 }
 
 #menu li.active {
-  background: linear-gradient(113.28deg, #E891FF -0.53%, rgba(134, 172, 250, 0.47) 101.56%);
+  background: linear-gradient(
+    113.28deg,
+    #e891ff -0.53%,
+    rgba(134, 172, 250, 0.47) 101.56%
+  );
   border-radius: 0.4rem;
   color: var(--cor-padrão);
 }
-
-
 
 #menu a {
   font-size: 1.6rem;
@@ -108,7 +110,6 @@ main section .titulo {
 main section strong {
   color: var(--cor-extra-1);
   background-color: var(--cor-extra-1);
-  ;
 }
 
 main section p {
@@ -151,7 +152,6 @@ main section a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .sobre h2 {
@@ -162,12 +162,19 @@ main section a:hover {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
+  flex-wrap: wrap;
 }
 
 .sub-container div {
   flex: 1;
 }
+.div-p p {
+  margin: 20px 0;
+}
 
+.div-p a {
+  margin: 20px auto !important;
+}
 .sobre strong {
   font-size: 1.6rem;
   color: var(--cor-extra-1);
@@ -176,12 +183,13 @@ main section a:hover {
 .sub-container div .img {
   border-radius: 0.4rem;
   border: 2px solid var(--cor-extra-1);
-  margin-left: 6rem;
+  margin: -40px auto 20px auto;
+  max-height: 350px;
+  max-width: 420px;
 }
 
 .icon-centro {
   margin: 2rem auto 0rem auto;
-
 }
 
 .icon-centro img {
@@ -195,7 +203,6 @@ main section a:hover {
 }
 
 @keyframes pisca {
-
   0%,
   100% {
     opacity: 1;
@@ -206,6 +213,105 @@ main section a:hover {
   }
 }
 
+/*
+  Projeto
+*/
+.projeto {
+  padding: 40px 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.projeto .sub-titulo-centro {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.projeto .projeto-p {
+  text-align: center;
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+.projeto-divs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projeto-divs-1 {
+  width: 30%;
+  margin: 1rem;
+  border: 1px solid #e891ff;
+  padding: 2rem;
+  text-align: center;
+  background: var(--colors-background-2);
+}
+
+.projeto-divs-1 .projeto-divs-1-texto {
+  padding: 20px 2%;
+  text-align: center;
+}
+
+.projeto-divs-1 .projeto-divs-1-texto h3 {
+  margin: 2rem 0;
+}
+.projeto-divs-1 .projeto-divs-1-texto h3::after {
+  content: "";
+  margin: 12px auto;
+  height: 4px;
+  width: 30px;
+  background: #e891ff;
+  display: block;
+}
+.projeto-divs-1 .projeto-divs-1-texto p {
+  margin: 1rem 0 0 0;
+}
+
+.projeto-divs-1 .projeto-divs-1-tecnologias {
+  padding: 2rem 0;
+}
+
+.projeto-divs-1 .projeto-divs-1-tecnologias ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.projeto-divs-1 .projeto-divs-1-tecnologias ul li {
+  padding: 1rem;
+  border: 1px solid #e891ff;
+  border-radius: 5px;
+}
+.projeto-divs-1 .projeto-divs-1-tecnologias ul li:hover {
+  padding: 1rem;
+  background: #e891ff;
+  border-radius: 5px;
+}
+
+.projeto-divs-1 .projeto-divs-1-tecnologias-div ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.projeto-divs-1 .projeto-divs-1-tecnologias-div ul li {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  width: 40%;
+  background: #e891ff;
+}
+.projeto-divs-1 .projeto-divs-1-tecnologias-div ul li a {
+  color: var(--cor-padrão);
+}
+
+.div-projetos-btn{
+  margin: 6rem auto 2rem auto;
+  text-align: center;
+}
 /* serviços */
 .background-servicos {
   background-color: var(--colors-background-2);
@@ -255,7 +361,6 @@ main section a:hover {
   margin: 1rem;
   border-radius: 0.6rem;
   flex: 1;
-
 }
 
 .servicos-article-texto {
@@ -266,7 +371,6 @@ main section a:hover {
 .servicos-article-texto h3 {
   font-weight: 300;
   font-size: 2.2rem;
-
 }
 
 .servicos-article-texto h3::after {
@@ -281,8 +385,6 @@ main section a:hover {
 .servicos-article-texto p {
   max-width: 400px;
 }
-
-
 
 /* Processo */
 .processo {
@@ -307,7 +409,7 @@ main section a:hover {
   text-align: center;
   max-width: 28%;
   border-radius: 0.6rem;
-  border: 1px solid #E891FF;
+  border: 1px solid #e891ff;
   background-color: var(--colors-background-1);
 }
 
@@ -338,7 +440,6 @@ main section a:hover {
   padding: 0 1rem 1rem 1rem;
 }
 
-
 footer {
   padding: 4rem 0 2rem 0;
   text-align: center;
@@ -362,7 +463,11 @@ footer .social {
 }
 
 .social i {
-  background: linear-gradient(113.28deg, #E891FF -0.53%, rgba(134, 172, 250, 0.47) 101.56%);
+  background: linear-gradient(
+    113.28deg,
+    #e891ff -0.53%,
+    rgba(134, 172, 250, 0.47) 101.56%
+  );
   border-radius: 0.4rem;
   color: var(--colors-background-2);
   padding: 0.6rem 1rem;
@@ -370,7 +475,7 @@ footer .social {
 }
 
 footer strong {
-  color: #E891FF !important;
+  color: #e891ff !important;
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -381,5 +486,5 @@ footer .copy {
 
 footer .copy-a a {
   text-decoration: none !important;
-  color: #E891FF !important;
+  color: #e891ff !important;
 }
